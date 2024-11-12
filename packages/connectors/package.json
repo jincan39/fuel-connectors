@@ -1,6 +1,6 @@
 {
-  "name": "@fuels/connectors",
-  "version": "0.36.1",
+  "name": "fuels-connectors-without-wagmi",
+  "version": "0.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -18,20 +18,16 @@
     "ts:check": "tsc --noEmit"
   },
   "peerDependencies": {
-    "fuels": ">=0.96.1"
+    "fuels": ">=0.96.1",
+    "viem": "2.17.5"
   },
   "dependencies": {
     "@ethereumjs/util": "9.0.3",
     "@ethersproject/bytes": "5.7.0",
     "@solana/web3.js": "1.93.1",
-    "@wagmi/core": "2.13.4",
-    "@web3modal/core": "5.0.0",
-    "@web3modal/scaffold": "5.0.0",
     "@web3modal/solana": "5.0.0",
-    "@web3modal/wagmi": "5.0.0",
     "rpc-websockets": "7.11.0",
-    "socket.io-client": "4.7.2",
-    "viem": "2.20.1"
+    "socket.io-client": "4.7.2"
   },
   "devDependencies": {
     "@fuel-connectors/bako-safe": "workspace:*",
@@ -40,8 +36,6 @@
     "@fuel-connectors/fuel-development-wallet": "workspace:*",
     "@fuel-connectors/fuel-wallet": "workspace:*",
     "@fuel-connectors/fuelet-wallet": "workspace:*",
-    "@fuel-connectors/solana-connector": "workspace:*",
-    "@fuel-connectors/walletconnect-connector": "workspace:*",
     "fuels": "0.96.1",
     "terser": "5.31.0",
     "tsup": "8.0.2",
